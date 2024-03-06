@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2230347335471368031}
   - component: {fileID: 3734160605821706883}
   - component: {fileID: 75130827378504319}
+  - component: {fileID: 5659462382222681194}
   - component: {fileID: 1607676661873650198}
   - component: {fileID: 5684169677146126867}
   m_Layer: 0
@@ -129,6 +130,18 @@ MonoBehaviour:
   enemy: {fileID: 9168335260902314595, guid: 58ef15c442f15a74aa5339ea1b3b0777, type: 3}
   leftButton: {fileID: 0}
   rightButton: {fileID: 0}
+--- !u!114 &5659462382222681194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 520828345889113264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d43c1ad3fac688549a50bfee3f28bc2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1607676661873650198
 MonoBehaviour:
   m_ObjectHideFlags: 0
