@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Menupause : MonoBehaviour
 {
@@ -19,5 +20,10 @@ public class Menupause : MonoBehaviour
         Time.timeScale = 1f;
         botonPausa.SetActive(true);
         menuPausa.SetActive(false);
+    }
+
+    public void Menu(string ArSnake)
+    {
+        SceneManager.LoadScene(ArSnake);
     }
 }
