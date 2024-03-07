@@ -14,11 +14,11 @@ GameObject:
   - component: {fileID: 3734160605821706883}
   - component: {fileID: 75130827378504319}
   - component: {fileID: 5659462382222681194}
-  - component: {fileID: 1607676661873650198}
+  - component: {fileID: -3191845507774432455}
   - component: {fileID: 5684169677146126867}
   m_Layer: 0
   m_Name: Snake
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -127,7 +127,7 @@ MonoBehaviour:
   Gap: 96
   BodyPrefab: {fileID: 3343157327107153733, guid: afb646e81bf6f3b448d69262e8f25e8f,
     type: 3}
-  enemy: {fileID: 9168335260902314595, guid: 58ef15c442f15a74aa5339ea1b3b0777, type: 3}
+  enemy: {fileID: 5321456583132317677, guid: 01e538c3a55cab54fa8535c26c998d83, type: 3}
   leftButton: {fileID: 0}
   rightButton: {fileID: 0}
 --- !u!114 &5659462382222681194
@@ -142,19 +142,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d43c1ad3fac688549a50bfee3f28bc2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1607676661873650198
+--- !u!114 &-3191845507774432455
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 520828345889113264}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61b2ca074b5ff8d40b4fb0acad0a3682, type: 3}
+  m_Script: {fileID: 11500000, guid: 2693ab849fc1c2047b9c5455aa538243, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.001
 --- !u!54 &5684169677146126867
 Rigidbody:
   m_ObjectHideFlags: 0

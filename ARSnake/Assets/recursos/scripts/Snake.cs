@@ -62,22 +62,38 @@ public class Snake : MonoBehaviour
         }
     }
 
+   
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Apple"))
+        {
+            Destroy(other.gameObject);
+            GrowSnake();
+            //Instantiate(enemy, new Vector3(Random.Range(-1.0f, 1.0f), 0f, 0f), Quaternion.identity);
+        }
+    }
+
     private void GrowSnake()
     {
         // Instantiate body instance and
         // add it to the list
         GameObject body = Instantiate(BodyPrefab);
         BodyParts.Add(body);
+        // Generar una nueva posición aleatoria
+        Vector3 newPosition = GenerateRandomPosition();
+
+        // Instanciar el objeto en la nueva posición
+        Instantiate(enemy, newPosition, Quaternion.identity);
     }
-    private void OnTriggerEnter(Collider other)
+
+    private Vector3 GenerateRandomPosition()
     {
-        if (other.CompareTag("Apple"))
-        {
+        // Generar coordenadas X y Z aleatorias dentro de ciertos límites
+        float newX = Random.Range(-1.0f, 1.0f);
+        float newZ = Random.Range(0.0f, -6.0f);
 
-            Destroy(other.gameObject);
-            GrowSnake();
-            Instantiate(enemy, new Vector3(Random.Range(-10.0f, 10.0f), 0f, 0f), Quaternion.identity);
-        }
-
+        // Devolver una nueva posición con las coordenadas aleatorias y manteniendo la misma altura
+        return new Vector3(newX, 0.20f, newZ);
     }
+
 }

@@ -5,12 +5,15 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/ArSnake.unity
     guid: 0741b78336d4b814eab896ecb65c0ee7
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Juego.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/prueba.unity
+    guid: 862c2679bb4884045a668524af4e86a7
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: ddf09e4e34fd0e842b7da4d54678b2c7,
       type: 2}

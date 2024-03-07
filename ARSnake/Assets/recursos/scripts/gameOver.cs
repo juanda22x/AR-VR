@@ -1,33 +1,35 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class gameOver : MonoBehaviour
 {
-    // Método que se llama cuando otro objeto colisiona con este objeto
-    private void OnCollisionEnter(Collision collision)
+    // Mï¿½todo que se llama cuando otro objeto colisiona con este objeto
+    private void OnTriggerEnter(Collider other)
     {
-        // Verificar si la colisión es con una pared
-        if (collision.gameObject.CompareTag("Pared"))
+        // Verificar si la colisiï¿½n es con una pared
+        if (other.gameObject.CompareTag("Pared"))
         {
-            // Llamar a un método para manejar la muerte del jugador
+            // Llamar a un mï¿½todo para manejar la muerte del jugador
             Morir();
         }
     }
 
-    // Método para manejar la muerte del jugador
+    // Mï¿½todo para manejar la muerte del jugador
     private void Morir()
     {
         // Por ahora simplemente desactivamos el objeto del jugador
         gameObject.SetActive(false);
 
-        // Reiniciar la escena después de un breve retraso (opcional)
+        // Reiniciar la escena despuï¿½s de un breve retraso (opcional)
         Invoke("ReiniciarEscena", 2f);
     }
 
-    // Método para reiniciar la escena
+    // Mï¿½todo para reiniciar la escena
     private void ReiniciarEscena()
     {
-        // Obtener el índice de la escena actual
+        // Obtener el ï¿½ndice de la escena actual
         int indiceEscenaActual = SceneManager.GetActiveScene().buildIndex;
 
         // Recargar la escena actual
