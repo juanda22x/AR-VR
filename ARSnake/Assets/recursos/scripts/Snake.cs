@@ -89,8 +89,8 @@ public class Snake : MonoBehaviour
     private Vector3 GenerateRandomPosition()
     {
         // Generar coordenadas X y Z aleatorias dentro de ciertos límites
-        float newX = Random.Range(-1.0f, 1.0f);
-        float newZ = Random.Range(0.0f, -6.0f);
+        float newX = Random.Range(-3.86f, 1.4f);
+        float newZ = Random.Range(-1.0f, -9.0f);
 
         // Devolver una nueva posición con las coordenadas aleatorias y manteniendo la misma altura
         return new Vector3(newX, 0.20f, newZ);

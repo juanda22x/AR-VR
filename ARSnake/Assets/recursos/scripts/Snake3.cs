@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Snake2 : MonoBehaviour
+public class Snake3 : MonoBehaviour
 {
     // Settings
     public float MoveSpeed = 5;
@@ -107,11 +107,11 @@ public class Snake2 : MonoBehaviour
     private Vector3 GenerateRandomPosition()
     {
         // Generar coordenadas X y Z aleatorias dentro de ciertos límites
-        float newX = Random.Range(-0.0710f, 0.0520f);
-        float newZ = Random.Range(0.1300f, -0.1000f);
+        float newX = Random.Range(-3.86f, 1.4f);
+        float newZ = Random.Range(-1.0f, -9.0f);
 
         // Devolver una nueva posición con las coordenadas aleatorias y manteniendo la misma altura
-        return new Vector3(newX, 0.0075f, newZ);
+        return new Vector3(newX, 0.16f, newZ);
     }
 
     // Button click events

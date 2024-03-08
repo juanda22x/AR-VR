@@ -11,6 +11,11 @@ public class cambioMenu : MonoBehaviour
         SceneManager.LoadScene(Juego);
     }
 
+    public void Prueba(string prueba1)
+    {
+        SceneManager.LoadScene(prueba1);
+    }
+
     public void Salir()
     {
         Application.Quit();
